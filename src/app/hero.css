@@ -1,0 +1,159 @@
+.hero-screen {
+  min-height: calc(100svh - 4.5rem);
+}
+
+@media (min-width: 1024px) {
+  .hero-screen {
+    min-height: calc(100svh - 6.5rem);
+  }
+}
+
+.hero-cta-ghost {
+  border-bottom-color: rgba(214, 174, 95, 0.7);
+  color: rgba(247, 243, 236, 0.92);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 28rem;
+  margin-top: 2.75rem;
+  border-top: 1px solid rgba(214, 174, 95, 0.55);
+}
+
+.hero-stats > div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.15rem;
+}
+
+.hero-stats > div + div {
+  margin-left: 1.15rem;
+  padding-left: 1.15rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hero-stats dd {
+  order: -1;
+  font-family: var(--font-serif), serif;
+  font-size: 2.8rem;
+  line-height: 0.9;
+}
+
+.hero-stats dt {
+  margin-top: 0.55rem;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-offer {
+  width: min(100%, 22.5rem);
+  margin-bottom: 5.5rem;
+  justify-self: start;
+  padding: 1.6rem 1.45rem 1.15rem;
+  border: 1px solid rgba(214, 174, 95, 0.38);
+  border-top: 3px solid var(--gold);
+  background: rgba(12, 11, 10, 0.78);
+  color: var(--ivory);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+}
+
+.hero-offer-kicker {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hero-offer-discount {
+  margin-top: 0.85rem;
+  font-family: var(--font-serif), serif;
+  font-size: 4.6rem;
+  line-height: 0.85;
+  color: var(--gold);
+}
+
+.hero-offer-name {
+  margin-top: 0.85rem;
+  font-family: var(--font-serif), serif;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.hero-offer-price {
+  margin-top: 0.75rem;
+  color: rgba(247, 243, 236, 0.72);
+  font-size: 0.95rem;
+}
+
+.hero-offer .hero-cta {
+  width: 100%;
+  justify-content: space-between;
+  min-height: 3.25rem;
+  margin-top: 1.5rem;
+  padding: 0.4rem 0.4rem 0.4rem 1.15rem;
+  border-bottom: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  gap: 1rem;
+}
+
+.hero-offer .hero-cta-arrow {
+  width: 2.35rem;
+  height: 2.35rem;
+  background: var(--ink);
+  color: var(--ivory);
+}
+
+.hero-offer .hero-cta:hover {
+  background: var(--gold);
+  color: var(--ink);
+  gap: 1rem;
+}
+
+@media (max-width: 639px) {
+  .hero-offer {
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.1rem 1rem;
+  }
+
+  .hero-offer-discount {
+    font-size: 3.4rem;
+  }
+
+  .hero-offer-name {
+    font-size: 2.1rem;
+  }
+
+  .hero-stats {
+    margin-top: 2rem;
+  }
+
+  .hero-stats dd {
+    font-size: 2.15rem;
+  }
+
+  .hero-stats dt {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-stats > div + div {
+    margin-left: 0.7rem;
+    padding-left: 0.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-offer {
+    justify-self: end;
+    align-self: center;
+    margin-bottom: 3rem;
+    transform: none;
+  }
+}
